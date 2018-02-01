@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fj.quizzapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:text="WELCOME TO...." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:text="PORTUGAL EDITION" />
+
+        <EditText
+            android:id="@+id/name_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:hint="Insert your name"
+            android:inputType="textPersonName"/>
+
+
+        <ImageView
+            android:layout_width="283dp"
+            android:layout_height="164dp"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/europe_map" />
+
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="1. Portugal makes border with what country?"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1_choice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="France" />
+
+            <RadioButton
+                android:id="@+id/question1_choice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Spain" />
+
+            <RadioButton
+                android:id="@+id/question1_choice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Italy" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="283dp"
+            android:layout_height="164dp"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/languages" />
+
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="2. What is the official language spoken?"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2_choice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Portuguese" />
+
+            <RadioButton
+                android:id="@+id/question2_choice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Brazilian" />
+
+            <RadioButton
+                android:id="@+id/question2_choice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="English" />
+        </RadioGroup>
+
+
+        <ImageView
+            android:layout_width="283dp"
+            android:layout_height="164dp"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cities" />
+
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="3. Select the portuguese cities: "
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/question3_choice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Madrid" />
+
+        <CheckBox
+            android:id="@+id/question3_choice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lisboa" />
+
+        <CheckBox
+            android:id="@+id/question3_choice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porto" />
+
+        <CheckBox
+            android:id="@+id/question3_choice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coimbra" />
+
+        <ImageView
+            android:layout_width="283dp"
+            android:layout_height="164dp"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/monuments" />
+
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="4. What monuments can you visit in Portugal: "
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/question4_choice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Palácio da Pena" />
+
+        <CheckBox
+            android:id="@+id/question4_choice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Big Ben" />
+
+        <CheckBox
+            android:id="@+id/question4_choice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mosteiro dos Jerónimos" />
+
+        <CheckBox
+            android:id="@+id/question4_choice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casa Batlló" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="5. How do you say 'thank you' to local people in Portugal?"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/question5_answer"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/submit_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:onClick="submitAnswers"
+            android:text="Submit Answers" />
+
+    </LinearLayout>
+</ScrollView>
